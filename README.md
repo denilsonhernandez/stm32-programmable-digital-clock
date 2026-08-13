@@ -58,7 +58,7 @@ Push Button ──► External Interrupt
                         ▼
               8-Digit 7-Segment Display
                      HH:MM:SS
-
+```
 ## Hardware
 
 - STM32 microcontroller
