@@ -1,5 +1,10 @@
 # stm32-programmable-digital-clock
 STM32-based programmable digital clock using external interrupts, ADC, RTC and multiplexed 7-segment displays.
+
+<p align="center">
+  <img src="images/prototype.jpg" width="700">
+</p>
+
 The project was designed to display hours, minutes, and seconds while allowing the user to configure the time through an interrupt-driven interface and an analog potentiometer.
 
 ## Project Overview
@@ -134,6 +139,9 @@ main()
       |
       +-- setDisplay()
 ```
+<p align="center">
+  <img src="images/flowchart.png" width="700">
+</p>
 
 ### Main Functions
 
@@ -155,11 +163,19 @@ Controls the multiplexing sequence of the 7-segment displays.
 
 ## Circuit Design
 
-![Circuit Diagram](images/circuit-diagram.png)
+The circuit integrates the STM32 microcontroller with the 7447 BCD-to-7-segment decoder, 74238 digit decoder, analog input, and the multiplexed display system.
+
+<p align="center">
+  <img src="images/circuit-diagram.png" width="800">
+</p>
 
 ## Demo
 
-![Digital Clock Demo](images/demo.gif)
+The following demonstration shows the digital clock operating on the physical prototype.
+
+<p align="center">
+  <img src="images/demo.gif" width="700">
+</p>
 
 ## Results
 
